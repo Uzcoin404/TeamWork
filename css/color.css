@@ -1,0 +1,161 @@
+.day-night{
+    border-radius: 7px;
+}
+.day-night i{
+    font-size: 26px;
+    cursor: pointer;
+    padding: 5px 15px;
+    transition: all 0.5s;
+    border-radius: 7px;
+}
+.sun{
+    color: #ff7b00;
+}
+.moon{
+    color: #0077ff;
+}
+.day-night i.active{
+    animation: animate 3s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* night mode */
+
+main.night, .contact{
+    transition: all 0.5s ease;
+    background-color: #212529;
+}
+.main.night .contact{
+    background: #212529;
+}
+main.night .panel{
+    background-color: #212529;
+    box-shadow: 0 0 5px #55637e;
+}
+main.night nav{
+    box-shadow: 0 0 5px #55637e;
+}
+main.night .sun{
+    color: yellow;
+}
+main.night .service__blog li{
+    color: #bbc3cc;
+}
+main.night .contact__text, main.night .contact__card__title, main.night .home__header__text, main.night .home__footer{
+    color: #8b948e;
+}
+main.night .contact__content, main.night .home__titles, main.night .home__text, main.night .home__accordion__title, main.night .home__features__card, main.night .education__box__content, main.night .wehave__text, main.night .rateus__btn, main.night .rateus__post__text, main.night .rateus__post__exit{
+    color: #dee7ee;
+}
+main.night .home__accordion, main.night .link__github {
+    color: #fff;
+}
+.main.night .contact__card:hover{
+    background: #253d69;
+    transform: scale(1.05);
+}
+main.night .education__box__year{
+    background: #253d69;
+    color: #dee7ee;
+}
+
+/* day mode */
+
+main.day .card{
+    background: rgb(156, 156, 160);
+}
+main.day{
+    transition: all 0.5s ease;
+    background-color: #9fdaff;
+}
+main.day .contact{
+    background: #9fdaff;
+}
+main.day .panel{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.350);
+    background-color: #9fdaff;
+}
+main.day nav{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.350);
+}
+main.day .contact__content, main.day .home__titles, main.day .home__text, main.day .home__accordion__title, main.day .home__features__card, main.day .education__box__content, main.day .wehave__text, main.day .rateus__btn, main.day .rateus__post__text, main.day .rateus__post__exit, main.day .link__github{
+    color: #24292f;
+}
+main.day #login:hover{
+    color: #0077ff;
+}
+main.day #reg:hover{
+    color: #E4405F;
+}
+main.day .home__titles span, main.day #bottomArrow, main.day .home__accordion__title span, main.day .home__header__btn, main.day .wehave__box h3, main.day .wehave__title, main.day .home__footer a{
+    color: #00c0a0;
+}
+main.day .home__header__btn, main.day .home__header__proces, main.day .link__github, main.day .accordion, main.day .rateus__btn{
+    border-color: #00c0a0;
+}
+main.day .home__header__btn:hover, main.day .home__header__proces::before{
+    background: #00c0a0;
+}
+main.day .home__features__title{
+    color: #00e7c1;
+}
+main.day .wehave__box{
+    border-color: #0e82fb;
+}
+main.day .home__features__card, main.day .education__box__year, main.day .home__rateus__content, main.day .home__footer{
+    background: #0e82fb;
+    color: #fff;
+}
+main.day .rateus__btn, main.day .rateus__post__text, main.day .rateus__post__exit{
+    color: #fff;
+}
+main.day .card__img{
+    box-shadow: 5px 10px 20px #2a4a58;
+}
+main.day .container .card .box{
+    color: green;
+    background: rgb(79, 73, 253);
+    border: 5px double rgb(0, 0, 255);
+}
+main.day .card__word{
+    text-shadow: none;
+}
+main.day .about__button{
+    color: rgb(32, 32, 92); 
+    box-shadow: none;
+}
+.main.day .contact__blog{
+    background: #9fa6b860;
+    color: #36393b;
+}
+.main.day .contact__card:hover{
+    background: #585e80;
+    transform: scale(1.05);
+    color: #dfdfdf;
+}
+
+/* messangers Icon */
+
+.teg{
+    color: #0088cc;
+    border: 1px solid #0088cc;
+}
+.face{
+    color: #1877F2;
+    border: 1px solid #1877F2;
+}
+.inst{
+    color: #E4405F;
+    border: 1px solid #E4405F;
+}
+.yt{
+    color: #CD201F;
+    border: 1px solid #CD201F;
+}
