@@ -73,14 +73,11 @@ accordion.forEach(accor => {
         }
     });
 });
-const counters =  document.querySelectorAll('.wehave__title');
-for (let i = 0; i < counters.length; i++) {
-    counters[i].innerHTML + '+'
-}
 const sendBtn = document.querySelector('.rateus__btn');
 const editBtn = document.querySelector('.rateus__post__exit');
 const post = document.querySelector('.rateus__post');
 const starWidget = document.querySelector('.star_widget');
+const learnMoreBtn = document.querySelector('.header__btn__blog');
 sendBtn.addEventListener('click', function(){
     starWidget.style.display = 'none';
     post.style.display = 'block';

@@ -195,6 +195,9 @@
     .home__sections, .service__blog{
         padding: 30px 15px;
     }
+    .slider{
+        display: none;
+    }
 }
 
 @media (max-width: 400px){

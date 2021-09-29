@@ -235,7 +235,7 @@ section.active{
 }
 /* scroll bar */
 ::-webkit-scrollbar{
-    width: 15px;
+    width: 12px;
     background: #29333f;
 }
 ::-webkit-scrollbar-thumb{
@@ -830,99 +830,307 @@ input:checked ~ form{
     width: 70% !important;
     overflow: hidden;
 }
+
 /* ******************************************************************************************************** */
-/*                                      Jahongir -- Service styling                                         */
+/*                                      Ulanbek -- Projects styling                                         */
 /* ******************************************************************************************************** */
 
-.price__title{
-   color: #0fbcf9;
-   padding: 30px 0;
-   text-align: center;
-   font-size: 56px;
+.projects{
+    background: url('../img/projectsIMG.gif')no-repeat center / cover;
+    object-fit: cover;
+    padding-top: 100px;
 }
-.service__li{
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    overflow: hidden;
+.slider {
+  height: 35vw;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
-sup{
-    display: none;
+.githublogo{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
 }
-
-.service__blog{
+.githubtitle{
     display: flex;
+    justify-content: center;
+}
+.slider label {
+  margin: auto;
+  width: 60%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  left: 0; right: 0;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(-30%,0,-200px);
+}
+
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(-15%,0,-100px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+  transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(15%,0,-100px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(30%,0,-200px);
+}
+.inputslider{
+    z-index: 50;
+    margin: 10px 15px 7px 0;
+    width: 20px;
+    height: 20px;
+    
+}
+.slide{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 30px;
+    height: 100%;
+    border-radius: 30px;
 }
-.pricing-card{
-    flex: 1;
-    border-radius: 28px;
-    min-width: 200px;
-    width: 250px;
-    margin: 20px 10px ;
-    text-align: center;
-    cursor: pointer;
-    overflow: hidden;
-    border: 1px solid #0fbcf9;
+.slide1{
+  background: linear-gradient(45deg, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)), url('../img/food100slide.jpg') no-repeat center / cover;
 }
-
-.pricing-card-header{
-    background-color: #0fbcf9;
+.slide2{
+    background:  linear-gradient(to right, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)),url('../img/JQUERYslide.png')no-repeat center / cover;
+}
+.slide3{
+    background: linear-gradient(to right, rgba(7, 15, 25, 0.781), rgba(7, 15, 25, 0.781)),url('../img/clockslide.jpg')no-repeat center / cover;
+}
+.slide4{
+    background:  linear-gradient(to right, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)),url('../img/musicsiteslide.jpg')no-repeat center / cover;
+}
+.slide5{
+    background:  linear-gradient(to right, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)),url('../img/bootstrap5slide.jpg')no-repeat center / cover;
+}
+.sliderbtn{
+    background: #ffc400;
+    border: 2px groove #ffc400;
+    font-size: 30px;
+    border-radius: 10px;
+    color: #ffffff;
+    margin-top: 30px;
     display: inline-block;
+    width: max-content;
+    padding: 10px;
+    transition: .5s ease;
+}
+.sliderbtn:hover{
+    color: #ffffff;
+    background: transparent;
+}
+.slidetitle{
+    color: #ffc400  ;
+}
+
+.projects__card__blog{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 100%;
+}
+.projectscard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    
+}
+.projectscard .projectsbox{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 30px;
+    transition: 0.5s;
+    text-align: center;
+}
+.projectscard .projectsbox::before{
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: white;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+.projectscard .projectsbox::after{
+    content: '';
+    filter: blur(30px); 
+    position: absolute; 
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: white;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    transition: 0.5s;
+}
+.projectscard .projectsbox:hover::before,
+.projectscard .projectsbox:hover::after{
+    transform: skewX(0deg);
+    left: 20px;
+    width: calc(100% - 90px);
+}
+.projectscard .projectsbox:nth-child(1)::before,
+.projectscard .projectsbox:nth-child(1)::after{
+    background: linear-gradient(315deg,#4dff03, #00d0ff);
+}
+.projectscard .projectsbox:nth-child(2)::before,
+.projectscard .projectsbox:nth-child(2)::after{
+    background: linear-gradient(315deg,#03a9f4, #ff0058);
+}
+.projectscard .projectsbox:nth-child(3)::before,
+.projectscard .projectsbox:nth-child(3)::after{
+    background: linear-gradient(315deg,#4dff03, #00d0ff);
+}
+.projectscard .projectsbox span{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    pointer-events: none;
+}
+.projectscard .projectsbox span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animateButton 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.projectscard .projectsbox:hover span::before{
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+.projectscard .projectsbox span::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animateButton 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    animation-delay: -1s;
+}
+.projectscard .projectsbox:hover span::after{
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+@keyframes animateButton{
+    0%,100%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+.projectscard .projectsbox .projectscontent{
+    position: relative;
+    left: 0;
+    padding: 20px 40px;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    transform: 0.5s;
     color: #fff;
-    padding: 12px 30px;
-    border-radius: 0 0 20px 20px;
-    font-style: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: .5s linear;
+    transition: 0.5s;
+    z-index: 1;
 }
-.pricing-card:hover .pricing-card-header{
-   box-shadow: 0 0 0 24rem  #0fbcf9;
-   background: #fff;
-   color: #a5a5a5;
+.projectscard .projectsbox:hover .projectscontent{
+    left: -25px;
+    padding: 60px 40px;
 }
-.price-cost{
-   font-size: 70px;
-   color: #0f3af9;
-   margin: 30px 0;
-   transition: .3s linear;
+.projectscard .projectsbox .projectscontent h2{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
 }
-.price sup , .price span{
-   font-size: 22px;
-   font-weight: 700;
+.projectscard .projectsbox .projectscontent p{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
 }
-
-.pricing-card:hover .price__ul li, .pricing-card:hover .price {
-   color: #fff;
-}
-.pricing-card li {
-   font-size: 16px;
-   padding: 10px 0;
-   text-transform: uppercase;
-}
-.order-btn {
-   display: inline-block;
-   border: 2px solid #0f3af9;
-   border-radius: 0 0 20px 20px;
-   color: #0f3af9;
-   padding: 10px;
-   width: max-content;
-   display: flex;
-   margin: 25px auto;
-   transition: all 0.3s;
-   text-transform: uppercase;
-}
-.order-btn:hover{
-   background-color: black;
-   color: #fff;
+.projectscard .projectsbox .projectscontent a{
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px;
 }
 
-/* ******************************************************************************************************** */
+/* ************************************************************************************************ */
 /*                                      Ulanbek -- About styling                                            */
-/* ******************************************************************************************************** */
+/* ************************************************************************************************ */
 
 .about .container{
     display: flex;
@@ -1209,6 +1417,96 @@ sup{
     padding: 15px;
     color: #999999;
 }
+/* ******************************************************************************************************** */
+/*                                      Jahongir -- Service styling                                         */
+/* ******************************************************************************************************** */
+
+.price__title{
+   color: #0fbcf9;
+   padding: 30px 0;
+   text-align: center;
+   font-size: 56px;
+}
+.service__li{
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+sup{
+    display: none;
+}
+
+.service__blog{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+.pricing-card{
+    flex: 1;
+    border-radius: 28px;
+    min-width: 200px;
+    width: 250px;
+    margin: 20px 10px ;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid #0fbcf9;
+}
+
+.pricing-card-header{
+    background-color: #0fbcf9;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-style: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .5s linear;
+}
+.pricing-card:hover .pricing-card-header{
+   box-shadow: 0 0 0 24rem  #0fbcf9;
+   background: #fff;
+   color: #a5a5a5;
+}
+.price-cost{
+   font-size: 70px;
+   color: #0f3af9;
+   margin: 30px 0;
+   transition: .3s linear;
+}
+.price sup , .price span{
+   font-size: 22px;
+   font-weight: 700;
+}
+
+.pricing-card:hover .price__ul li, .pricing-card:hover .price {
+   color: #fff;
+}
+.pricing-card li {
+   font-size: 16px;
+   padding: 10px 0;
+   text-transform: uppercase;
+}
+.order-btn {
+   display: inline-block;
+   border: 2px solid #0f3af9;
+   border-radius: 0 0 20px 20px;
+   color: #0f3af9;
+   padding: 10px;
+   width: max-content;
+   display: flex;
+   margin: 25px auto;
+   transition: all 0.3s;
+   text-transform: uppercase;
+}
+.order-btn:hover{
+   background-color: black;
+   color: #fff;
+}
+
 /* ****************************************************************************************************** */
 /*                                    Suyunbek -- Contact styling                                         */
 /* ****************************************************************************************************** */
