@@ -1,15 +1,15 @@
 /* Loader */
 .loader{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     z-index: 9999;
-    pointer-events: none;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #212529;
     transition: .5s;
+    overflow: hidden;
 }
 .loader__content{
     position: relative;
@@ -926,37 +926,37 @@ input:checked ~ form{
   background: linear-gradient(45deg, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)), url('../img/food100slide.jpg') no-repeat center / cover;
 }
 .slide2{
-    background:  linear-gradient(to right, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)),url('../img/JQUERYslide.png')no-repeat center / cover;
+    background: linear-gradient(45deg, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)), url('../img/phpSlide.png')no-repeat center / cover;
 }
 .slide3{
     background: linear-gradient(to right, rgba(7, 15, 25, 0.781), rgba(7, 15, 25, 0.781)),url('../img/clockslide.jpg')no-repeat center / cover;
 }
 .slide4{
-    background:  linear-gradient(to right, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)),url('../img/musicsiteslide.jpg')no-repeat center / cover;
+    background: linear-gradient(45deg, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)), url('../img/musicsiteslide.jpg')no-repeat center / cover;
 }
 .slide5{
-    background:  linear-gradient(to right, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)),url('../img/bootstrap5slide.jpg')no-repeat center / cover;
+    background: linear-gradient(to right, rgba(7, 15, 25, 0.781), rgba(7, 15, 25, 0.781)), url('../img/bootstrap5slide.jpg')no-repeat center / cover;
 }
 .sliderbtn{
     background: #ffc400;
-    border: 2px groove #ffc400;
-    font-size: 30px;
+    border: 2px solid #ffc400;
+    font-size: 25px;
     border-radius: 10px;
     color: #ffffff;
     margin-top: 30px;
+    margin-bottom: 10px;
     display: inline-block;
     width: max-content;
     padding: 10px;
-    transition: .5s ease;
+    transition: .3s ease;
 }
 .sliderbtn:hover{
     color: #ffffff;
     background: transparent;
 }
 .slidetitle{
-    color: #ffc400  ;
+    color: #ffc400;
 }
-
 .projects__card__blog{
     display: flex;
     flex-wrap: wrap; 

@@ -1,8 +1,8 @@
 // Loader
 const loader = document.querySelector('.loader');
 window.addEventListener('load', function(){
-
     loader.style.display = 'none';
+    loader.style.pointerEvents = 'none';
 });
 const section = document.querySelectorAll('section');
 let pnLink = document.querySelectorAll('.panel__link')
