@@ -198,6 +198,9 @@
     .slider{
         display: none;
     }
+    .home__rateus__content{
+        max-width: 350px;
+    }
 }
 
 @media (max-width: 400px){

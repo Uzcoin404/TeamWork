@@ -908,8 +908,8 @@ input:checked ~ form{
 .inputslider{
     z-index: 50;
     margin: 10px 15px 7px 0;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     
 }
 .slide{
@@ -923,24 +923,24 @@ input:checked ~ form{
     border-radius: 30px;
 }
 .slide1{
-  background: linear-gradient(45deg, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)), url('../img/food100slide.jpg') no-repeat center / cover;
+  background: linear-gradient(to right, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)), url('../img/food100slide.jpg') no-repeat center / cover;
 }
 .slide2{
-    background: linear-gradient(45deg, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)), url('../img/phpSlide.png')no-repeat center / cover;
+    background: linear-gradient(to right, rgba(0, 27, 59, 0.600), rgba(0, 47, 105, 0.600)), url('../img/phpSlide.png')no-repeat center / cover;
 }
 .slide3{
-    background: linear-gradient(to right, rgba(7, 15, 25, 0.781), rgba(7, 15, 25, 0.781)),url('../img/clockslide.jpg')no-repeat center / cover;
+    background: linear-gradient(to right, rgba(7, 15, 25, 0.600), rgba(7, 15, 25, 0.600)),url('../img/clockslide.jpg')no-repeat center / cover;
 }
 .slide4{
-    background: linear-gradient(45deg, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)), url('../img/musicsiteslide.jpg')no-repeat center / cover;
+    background: linear-gradient(to right, rgba(7, 15, 25, 0.600), rgba(7, 15, 25, 0.600)), url('../img/musicsiteslide.jpg')no-repeat center / cover;
 }
 .slide5{
-    background: linear-gradient(to right, rgba(7, 15, 25, 0.781), rgba(7, 15, 25, 0.781)), url('../img/bootstrap5slide.jpg')no-repeat center / cover;
+    background: linear-gradient(45deg, rgba(29, 112, 4, 0.582), rgba(4, 131, 46, 0.288), rgba(28, 11, 180, 0.459)), url('../img/vueCinema.png')no-repeat center / cover;
 }
 .sliderbtn{
     background: #ffc400;
     border: 2px solid #ffc400;
-    font-size: 25px;
+    font-size: 24px;
     border-radius: 10px;
     color: #ffffff;
     margin-top: 30px;
